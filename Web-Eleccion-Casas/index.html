@@ -1,0 +1,44 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario Elección Casa</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<form action="index2.php" method="GET">
+	<h1 id="Principal">Rellene el Formulario para saber el precio de la Vivienda que Usted Prefiera:</h1>
+	<div id="formulario">
+	<fieldset>
+		<legend>Características de la Vivienda:</legend>
+		<p>
+			<label>Seleccione la zona que más le guste:</label>
+			<select id="localizacion" name="preciometro">
+				<option value="23">Valencia</option>
+				<option value="25">Madrid</option>
+				<option value="30">Barcelona</option>
+				<option value="20">Sevilla</option>
+			</select>
+
+			<label id="tipotamaño" form="tipo"><br><br>¿De que tamaño quiere la vivienda?<br></label>
+				<input type="radio" name="tamaño" id="tipo1" value="1 dormitorio y 50m" checked>1 dormitorio y 50 metros<br>
+				<input type="radio" name="tamaño" id="tipo2" value="2 dormitorios y 70m">2 dormitorios y 70 metros<br>
+				<input type="radio" name="tamaño" id="tipo3" value="3 dormitorios y 100m">3 dormitorios y 100 metros<br><br>
+
+			<label form="extra">Seleccione las mejoras que desee:<br></label>
+			<input type="checkbox" name="extra" id="extra1" value="Tiene Elementos Extra">Calefación<br>
+			<input type="checkbox" name="extra" id="extra2" value="Tiene Elementos Extra">Aire Acondicionado<br>
+			<input type="checkbox" name="extra" id="extra3" value="Tiene Elementos Extra">Bañera de Hidromasaje<br>
+			<input type="checkbox" name="extra" id="extra4" value="No Tiene Elementos Extra" checked>No Necesito Extras<br><br>
+
+			<input type="button" name="calcular" value="Calcular Precio" onclick="calcularPrecio();"><br><br>
+			<input type="submit" value="Enviar">
+		</p>
+	</fieldset>
+	</div>
+	<div id="salida">
+	</div>
+	<footer><h3>Página realizada por: Pablo Martín</h3></footer>
+</body>
+</html>

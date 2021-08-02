@@ -1,0 +1,63 @@
+body{
+	background-image: url(../imagenes/casa3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;	
+}
+
+fieldset{
+	width: 500px;
+	margin:auto;
+}
+
+#salida{
+	background-color: aqua;
+	width: 500px;
+	margin:auto;
+	opacity: 0.80;
+}
+
+#formulario{
+	padding-top: 50px;
+	color: white;
+}
+
+h1{
+	text-align: center;
+	background-color: aqua;
+	margin: auto;
+	width: 1000px;
+}
+
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #64B2DA;
+	color: black;
+	opacity: 0.75;
+	text-align: center;
+}
+
+legend{
+	border-style: solid;
+	border-width: 2;
+}
+
+@media only screen and (max-width: 1100px) {
+
+	body {
+		background-image: url(../imagenes/casa3.jpg);
+		background-size: 110% 250%;	
+	}
+
+	#Principal{
+		width: 750px;
+		margin-top: 400px;
+	}
+
+	#formulario{
+		font-size: 30px;
+	}
+}
+
